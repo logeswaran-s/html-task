@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   
     <style>
         *{
             margin: 0%;
@@ -14,6 +17,11 @@
             background-color: black;
             padding: 20px 20px 0 100px;
             font-size:large;
+            background-image: url(https://imgs.search.brave.com/fyqXhUPlLnvTFM96nCPiK7cJGz3pHSj50GiSFsk1l5o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTQv/ODQ3LzE3My9zbWFs/bC9hLWNvbmZpZGVu/dC15b3VuZy1tYW4t/aW4tZm9ybWFsLWF0/dGlyZS1zdGFuZGlu/Zy13aXRoLWhhbmRz/LWluLXBvY2tldHMt/c2hvd2Nhc2luZy1w/cm9mZXNzaW9uYWxp/c20tcG5nLnBuZw  );
+            background-repeat: no-repeat;
+            background-position:50px 250px;
+            background-size: 400px;
+                       
         }
         .w{
             padding: 70px 0 0 480px;
@@ -63,6 +71,8 @@
             height: 50vh;
             background-color: black;
             color: white;
+            
+            
         }
         .s{
             font-weight: 900;
@@ -88,8 +98,9 @@
         }
         .c{
             height: 45vh;
-            background-color: rgb(24, 24, 24);
-            color: white;
+            background-color:white;
+            color: black;
+            
         }
         .x{
             padding: 90px 0 0 150px;
@@ -102,12 +113,43 @@
             width: 300px;
             margin-left: 43%;
         }
+        .pa{
+            text-decoration: none;
+            color: lightcyan;
+            
+        }
+        .lo{
+            padding-left: 62%;
+            position: fixed;
+             
+            
+        }
+        .ma{
+            background-color: rgb(74, 67, 67);
+            height: 50vh;
+            display: flex;
+        }
+        .am{
+            padding: 70px 100px;
+        }
+       
+          
     </style>
 </head>
 <body>
-    <div class="q"> 
+    <div class="q" id="pofo"> 
         <b>PORTFOLIO</b>
+        <a href="https://github.com/logeswaran-s/html-task" target="_blank"><i class="fa-brands fa-github" style="color: rgb(236, 239, 243); padding-left: 50px;"></i></a>
+        <a href="https://www.linkedin.com/in/loges-waran-707618311/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: rgb(236, 239, 243); padding-left: 50px;"></i></a>
+        
+        <nav class="lo" >
+        <a  class="pa" href="#pofo">Home</a>
+        <a style="padding-left: 30px;" class="pa" href="#about">About</a>
+        <a style="padding-left: 30px;" class="pa" href="#sl">Skill list</a>
+        <a style="padding-left: 30px;" class="pa" href="#ct">Contact</a>
+         </nav>
         <h1 class="w">Loges Waran</h1>
+       
         <center>
             <h2 class="e">Java Full Stack</h2>
         </center>
@@ -117,7 +159,7 @@
         </p>
         <br><br><br>
         <button type="button" class="t">
-        <a href="#about"  style="text-decoration: none;">About</a>
+        <a href=""  style="text-decoration: none;">Download CV</a>
         </button>
     </div>
 
@@ -131,14 +173,30 @@
         </h1>
         <br><br><br><br>
         <p class="o">
-            My name is Logeswaran, a passionate developer <br> with a background in Artificial Intelligence and Data Science. <br>I am interested in building modern,<br> responsive, and user-friendly web applications <br>using Java and web technologies. <br><br>
+            My name is Logeswaran, a passionate developer  with a background in Artificial Intelligence and Data Science. <br>I am interested in building modern, responsive, and user-friendly web applications <br>using Java and web technologies. <br><br>
 
-            My focus is on continuously improving <br>my  development skills, exploring <br> new technologies,  and working on <br>practical projects. I enjoy  solving <br>problems through code and creating  simple, <br>effective digital solutions. 
+            My focus is on continuously improving my  development skills, exploring <br> new technologies,  and working on practical projects. I enjoy  solving <br>problems through code and creating  simple, <br>effective digital solutions. 
         </p>
+    </div>
+    <div class="ma">
+        <h2 style="color: green; padding: 30px;">
+            PROJECT
+        </h2>
+        <img class="am" src="https://i.pinimg.com/736x/89/d3/61/89d36129e73084d3d6c6b064de4d9be2.jpg" width="200px" height="200px" alt="street light photo">
+        <div>
+            <h1 style="color: rgb(35, 34, 46); padding: 70px;">
+                Automatic Street Light Control System Using LDR and Arduino
+            </h1>
+            <p style="color: whitesmoke; font-size: larger;">
+                To automatically control street lights based on  surrounding light intensity and reduce unnecessary power consumption
+            </p>
+        </div>
+
+
     </div>
 
 
-    <div class="a">
+    <div class="a" id="sl">
         <h2 class="s">
             Skill List
         </h2>
@@ -154,19 +212,23 @@
     </div>
 
     
-        <div class="c">
+        <div class="c" id="ct">
             <h2 class="x">
                 Contacts
             </h2>
             <h3 class="m">
                 EMAIL
             </h3><br>
-            <a href="" style="text-decoration: none;color: white; padding-left: 48%;">loges3220j@gmail.com</a><br><br>
+            <a href="" style="text-decoration: none;color: black; padding-left: 48%;">loges3220j@gmail.com
+            </a><br><br>
             <hr class="b" color="green"><br><br>
             <h3 class="m">
                 PHONE
             </h3> <br>
-            <a href="" style="text-decoration: none;color: white; padding-left: 50%;">9514786057</a>
+            <a href="" style="text-decoration: none;color: black; padding-left: 50%;">9514786057</a>
+           
+            
+          
         </div>
     
     
