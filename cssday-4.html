@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       ul{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        list-style-type: none;
+      }
+      a{
+        text-decoration: none;
+        color: red;
+       }
+       li{
+        font-size: 15px;
+       transition:text-decoration-line 2s,font-size 2s,transform 2s;
+       }
+       li:hover{
+        font-size: 25px;
+       text-decoration-line: underline ;
+       /* transform: rotate(30deg); */
+     }
+     
+     nav ul ul{
+        display: none;
+        border: 2px solid;
+         box-shadow:0px 8px 10px 0px rgb(50, 212, 152);
+       
+        border-radius: 5px 10px 5px 10px;
+        position: absolute;
+        top: 50px;
+         padding: 5px; 
+ }
+     nav li:hover>ul{
+        display: block;
+     }
+    .la{
+        height: 100vh;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr7Q2-iOUXeta4efD3d8FAPLTOfSN1lKRhOGJInoa6mA&s=10);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition:transform 2s;
+        margin-top: 100px;
+    }
+    .la:hover{
+             transform: rotate(15deg);
+    }
+    .qa{
+        height: 100vh;
+        background-color: black;
+        opacity: 0.3;
+  }
+  .wa{
+    color: black;
+  }
+  .w{
+    color: red;
+    
+  }
+  .w:hover{
+            background-color: aqua;
+  }
+  .wa:hover:not(.active){
+    background-color: brown;
+  }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Detail</a></li>
+            <li><a href="">Items</a></li>
+            <li><a href="">Contact</a>
+            <ul>
+                <li class="ma"><a href="">Phone</a></li>
+                <li class="ma"><a href="">Email</a></li>
+            </ul></li>
+        </ul>
+    </nav>
+    <div class="la">
+        <div class="qa">
+
+        </div>
+      
+    </div><br><br><br><br>
+    <div style="display: inline-block;">
+        <a class="w" href="">&#8594;</a>
+        <a class="wa" href="">1</a>
+        <a class="wa" href="">2</a>
+        <a class="wa active" href="">3</a>
+        <a class="wa" href="">4</a>
+        <a class="wa" href="">5</a>
+        <a class="wa" href="">6</a>
+        <a class="wa" href="">7</a>
+        <a class="wa active" href="">8</a>
+        <a class="wa" href="">9</a>
+        <a class="wa" href="">10</a>
+        <a class="w" href="">&#8592;</a>
+    </div>
+</body>
+</html>
