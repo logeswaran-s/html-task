@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- css dom -->
+     <h1>spa</h1>
+     <!-- data types -->
+      <div id="da">
+        <h1 class="da"></h1>
+        <h1 class="da"></h1>
+        <h1 class="da"></h1>
+        <h1 class="da"></h1>
+        <h1 class="da"></h1>
+        <h1 class="da"></h1>
+      </div>
+
+
+      <!-- Arithmatic -->
+      <div id="am">
+        <h1 class="am"></h1>
+        <h1 class="am"></h1>
+        <h1 class="am"></h1>
+        <h1 class="am"></h1>
+        <h1 class="am"></h1>
+      </div>
+
+      <!-- assignment -->
+
+      <div id="ag">
+        <h1 class="ag"></h1>
+        <h1 class="ag"></h1>
+        <h1 class="ag"></h1>
+        <h1 class="ag"></h1>
+        <h1 class="ag"></h1>
+        <h1 class="ag"></h1>
+      </div>
+
+      <!-- conditional -->
+
+      <div>
+        <h1 class="ct"></h1>
+        <h1 class="ct"></h1>
+        <h1 class="ct"></h1>
+        <h1 class="ct"></h1>
+        <h1 class="ct"></h1>
+        <h1 class="ct"></h1>
+      </div>
+
+
+     <script>
+         document.getElementsByTagName("h1")[0].innerHTML="Hello Everyone";
+         document.getElementsByTagName("h1")[0].style.color="gray";
+         document.getElementsByTagName("h1")[0].style.background="yellow";
+         document.getElementsByTagName("h1")[0].style.fontSize="small";
+
+
+        //  data types
+        const name="Logeswaran";
+        document.getElementsByClassName("da")[0].innerHTML=name+" - "+typeof(name);
+        const course="Java Full Stack";
+        document.getElementsByClassName("da")[1].innerHTML=course+" - "+typeof(course);
+        const mark=60;
+        document.getElementsByClassName("da")[2].innerHTML=mark+" - "+typeof(mark);
+        const is_check=true;
+        document.getElementsByClassName("da")[3].innerHTML=is_check+" - "+typeof(is_check);
+        const check=false;
+        document.getElementsByClassName("da")[4].innerHTML=check+" - "+typeof(check);
+        const perstange=8.65;
+        document.getElementsByClassName("da")[5].innerHTML=perstange+" - "+typeof(perstange);
+
+
+        document.getElementById("da").style.color="red";
+        document.getElementById("da").style.border="black solid";
+        document.getElementById("da").style.textAlign="center";
+
+        // operators
+
+        // arithmatic operators
+        // +,-,*,/,%
+
+        let a=10,b=4,c=8;
+
+        document.getElementsByClassName("am")[0].innerHTML=`Add value :${a+b+c}`;
+        document.getElementsByClassName("am")[1].innerHTML=`Subtrack value :${a-b-c}`;
+        document.getElementsByClassName("am")[2].innerHTML=`Multiple value :${a*b*c}`;
+        document.getElementsByClassName("am")[3].innerHTML=`Divison value :${a/b/c}`;
+        document.getElementsByClassName("am")[4].innerHTML=`Modules value :${a%b%c}`;
+
+
+        document.getElementById("am").style.borderRadius="20%";
+        document.getElementById("am").style.background="blue";
+        document.getElementById("am").style.textAlign="center";
+        document.getElementById("am").style.width="60%";
+
+
+        // assignment operators
+        // +=,-=,*=,/=,%=
+
+        let d=8;  
+
+        document.getElementsByClassName("ag")[0].innerHTML=`D value :${d}`;
+        document.getElementsByClassName("ag")[1].innerHTML=`+= value :${d+=2}`;
+        document.getElementsByClassName("ag")[2].innerHTML=`-= value :${d-=4}`;
+        document.getElementsByClassName("ag")[3].innerHTML=`*= value :${d*=5}`;
+        document.getElementsByClassName("ag")[4].innerHTML=`/= value :${d/=6}`;
+        document.getElementsByClassName("ag")[5].innerHTML=`%= value :${d%=2}`;
+
+        document.getElementById("ag").style.display="flex";
+        
+
+        // conditional operators
+        // ==,!=,<,>,<=,>=
+
+        let a1=40,a2=20,a3=40,a4=10;
+
+        document.getElementsByClassName("ct")[0].innerHTML=`a1==a3 :${a1==a3}`;
+        document.getElementsByClassName("ct")[1].innerHTML=`a4!=a2 :${a4!=a2}`;
+        document.getElementsByClassName("ct")[2].innerHTML=`a3&lt;a4 :${a3<a4}`;
+        document.getElementsByClassName("ct")[3].innerHTML=`a1>a4 :${a1>a4}`;
+        document.getElementsByClassName("ct")[4].innerHTML=`a1<=a3 :${a1<=a3}`;
+        document.getElementsByClassName("ct")[5].innerHTML=`a4>=a2 :${a4>=a2}`;
+
+
+
+
+        
+    </script>
+</body>
+</html>
