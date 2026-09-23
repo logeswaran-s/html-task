@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 class="fu"></h3>
+    <script>
+
+        //1. function call
+        function greet(){
+            document.writeln("Hello Students","<br>");
+        }
+        greet();
+
+        //2. function name error
+        function welcome(){
+            document.writeln("Welcome to Javascript","<br>");
+        }
+        welcome();
+
+        //3. missing parentheses
+        function message(){
+            document.writeln("Good Morning","<br>");
+        }
+        message();
+
+        //4. function argument error
+        function add(a,b){
+            document.writeln(a+b,"<br>");
+        }
+        add(10,20);
+
+        //5. wrong argument order
+        function student(name,age){
+            document.writeln("Name :",name,"<br>");
+            document.writeln("Age :",age,"<br>");
+        }
+        student("Logeswaran",21);
+
+        // 6.variable name error
+        function ad(a,b){
+            let result=a+b;
+            document.writeln(result,"<br>");
+        }
+        ad(30,40);
+
+        // 7.missing parameter value
+        function multiply(a,b){
+            let result=a*b;
+            document.writeln(result,"<br>");
+        }
+        multiply(5,6);
+
+        // 8.return value not stored
+        function aad(a,b){
+            let result=a+b;
+            return result;
+        }
+        document.writeln(aad(3,4),"<br>");
+
+        // 9.wrong return value
+        function getName(){
+            let name ="Logeswaran";
+            return name;
+        }
+        document.writeln(getName(),"<br>");
+        
+        // 10.missing return
+        function add(a,b){
+            let result =a+b;
+            return result;
+        }
+        let x=add(10,20);
+        document.writeln(x,"<br>");
+
+        // 11.return statement error
+        function square(num){
+            let multiple=num*num;
+            return multiple;
+        }
+        document.writeln(square(5),"<br>");
+
+        // 12.string concatenation
+        function fullname(firstName,lastName){
+            let result="Loges"+" "+"Waram";
+            return result;
+        }
+        document.writeln(fullname("firstName","lastName"),"<br>");
+
+        // 13.function call argument error
+        function calculate(a,b){
+            return a+b;
+        }
+        let result=calculate(10,30);
+        document.getElementsByClassName("fu")[0].innerHTML=result;
+
+        // 14.local variable scope
+        function demo(){
+            let messag="Hello";
+            document.writeln(messag,"<br>");
+        }
+        demo();
+        
+
+        // 15.wrong function name
+        function display(){
+           document.writeln("JavaScript Function","<br>");
+        }
+        display();
+
+        // 16.multiple parameters
+        function studen(name,course,duration){
+           document.writeln(name,"<br>");
+           document.writeln(course,"<br>");
+           document.writeln(duration,"<br>");
+
+        }
+        studen("Logeswaran","javafullstack","sixmonth");
+
+        // 17.calculation error
+        function average(a,b){
+            return (a+b)/2;
+        }
+        document.writeln(average(3,3),"<br>");
+
+        // 18.conditional error
+        function checkAge(age){
+            if(age<=18){
+                return "Eligible";
+             }
+            
+        }
+        document.writeln(checkAge(15),"<br>");
+
+        // 19.function reuse
+         function add(a,b){
+            return a+b;
+         }
+         let result1=add(10,20);
+         let result2=add(30,40);
+         document.writeln(result1,"<br>");
+         document.writeln(result2,"<br>");
+
+        //20.complte function debugging
+        function calculate(price,quantity){
+            let total=price*quantity;
+            return total;
+        }
+        let price=100;
+        let quantity=5;
+        let results=calculate(price,quantity);
+        document.writeln("Total :"+results);
+
+    </script>
+</body>
+</html>
