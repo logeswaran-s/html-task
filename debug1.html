@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.onclick:Function call -->
+    <button onclick="greet()">Click me</button>
+
+    <script>
+        function greet() {
+            alert("Hello!");
+        }
+    </script>
+
+<br><br>
+
+<!-- 2.onclick:Function name -->
+
+    <button onclick="welcome()">Welcome</button>
+
+    <script>
+        function welcome() {
+            alert("Welcome to Javascript");
+        }
+    </script>
+
+    <br><br>
+
+    <!-- 3.onclick:Arguments  -->
+
+    <button onclick="addNumbers(5, 10)">Add</button>
+
+    <script>
+        function addNumbers(a,b) {
+           document.write("The sum is: " + (a + b));
+        }
+    </script>
+
+    <br><br>
+
+    <!-- 4.onclick:Return Values -->
+    <button onclick="showResult()">Result</button>
+
+    <script>
+        function calculate(a,b) {
+         return 10 + 20;
+            
+        }
+        function showResult() {
+        
+        document.write("<br>The returned value is: " + calculate(10, 20));
+        }
+    </script>
+
+    <br><br>
+
+    <!-- 5.onclick:Variable Name -->
+
+    <button onclick="displayName()">Name</button>
+
+    <script>
+        function displayName() {
+            var name = "Logeswaran";
+            document.write("The name is: " + name);
+        }
+    </script>
+
+    <br><br>
+
+    <!-- 6.onchange:Function Name -->
+
+    <select onchange="changeCourse()">
+    <option >Python</option>
+    <option >Java</option>
+    </select>
+
+    <script>
+        function changeCourse() {
+        alert("Course Changed");
+        }
+    </script>
+
+    <br><br>   
+    
+    <!-- 7.onchange:Event value -->
+
+    <select onchange="showCourse(this.value)">
+    <option value="Python">Python</option>
+    <option value="Java">Java</option>
+    </select>
+
+    <script>
+        function showCourse(course) {
+           document.write("The selected course is: " + course);
+        }
+    </script>
+
+    <br><br>
+
+    <!-- 8.onchange:Input value -->
+
+    <input type="text" onchange="showValue(this.value)">
+    
+    <script>
+        function showValue(value) {
+            document.write("The input value is: " + value);
+        }
+    </script>
+
+    <br><br>
+
+    <!-- 9.onmouseenter:Function call -->
+
+    <div onmouseenter="mouseEnter()">
+        Move Mouse Here
+        </div>
+
+        <script>
+            function mouseEnter() {
+            document.write("Mouse Entered");
+            }
+        </script>
+
+        <br><br>
+
+        <!-- 10.onmouseenter:Function Name -->
+
+        <h2 onmouseenter="enterText()">
+            Move Mouse
+        </h2>
+
+        <script>
+            function enterText() {
+            document.write("Mouse Enter");
+            }
+        </script>
+
+        <br><br>
+
+        <!-- 11.onmouseout:Function call -->
+
+        <p onmouseout="mouseOut()">
+            Move mouse out
+        </p>
+
+        <script>
+            function mouseOut() {
+            document.write("Mouse Out");
+            }
+        </script>
+
+        <br><br>
+
+        <!-- 12.onmouseout:Variable Error -->
+
+        <div onmouseout="hideMessage()">
+            Mouse Area
+        </div>
+
+        <script>
+            function hideMessage() {
+            let message="Mouse Left";
+            document.write(message);
+            }
+        </script>
+
+        <br><br>
+
+        <!-- 13.onkeyup:Function Name -->
+
+        <input type="text" onkeyup="keyUp()">
+
+        <script>
+            function keyUp() {
+            document.write("Key Released");
+            }
+        </script>    
+        
+        <br><br>
+
+        <!-- 14.onkeyup:Value -->
+
+        <input type="text" onkeyup="showText(this.value)">
+
+        <script>
+            function showText(text) {
+            console.log("The input text is: " + text);
+            }
+        </script>
+
+        <br><br>
+
+        <!-- 15.onkeydown:Function call -->
+
+        <input type="text" onkeydown="keyDown()">
+
+        <script>
+            function keyDown() {
+            console.log("Key pressed Down");
+            }
+        </script>
+
+        <br><br>
+
+        <!-- 16.onkeydown:Argument -->
+
+        <input type="text" onkeydown="checkKey(this.value)">
+
+        <script>
+            function checkKey(event) {
+            console.log(event);
+            }
+        </script>
+
+        <br><br>
+
+        <!-- 17.onkeypress:Function Name -->
+
+        <input type="text" onkeypress="keyPress()">
+
+        <script>
+            function keyPress() {
+            console.log("Key Pressed");
+            }
+        </script>
+
+        <br><br>
+
+        <!-- 18.onkeypress:Variable Error -->
+
+        <input type="text" onkeypress="showKey(this.value)">
+
+        <script>
+            function showKey(e) {
+            console.log("The pressed key is: " + e);
+            }
+        </script>
+
+        <br><br>
+
+        <!-- 19.Multiple Events -->
+
+        <input type="text" onkeydown="keyDown()" onkeyup="keyUp()">
+
+        <script>
+            function keyDown() {
+            console.log("Key Down");
+            }
+            function keyUp() {
+            console.log("Key Up");
+            }
+        </script>
+
+        <br><br>
+
+        <!-- 20.Function+Multiple Events -->
+
+        <input type="text" onchange="inputChange(this.value)" onkeyup="inputkey(this.value)">
+
+        <script>
+            function inputChange(value) {
+            console.log("Input Changed: " + value);
+            }
+            function inputkey(text) {
+            console.log("Key Released: " + text);
+            }
+        </script>
+</body>
+</html>
